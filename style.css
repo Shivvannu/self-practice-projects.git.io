@@ -1,0 +1,113 @@
+@media only screen and (min-width: 768px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(97, 14, 14);
+    }
+
+    .image-container {
+        width: max-content;
+        object-fit: scale-down;
+        position: sticky;
+        border: 4px solid red;
+        border-radius: 15px;
+        overflow: hidden;
+        height: fit-content;
+
+    }
+
+    .div {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .next {
+        top: 15%;
+        right: 0;
+        transform: rotate(0.5turn);
+
+    }
+
+    .prev {
+        top: 15%;
+        left: 0;
+        transform:  rotate(0.5turn);
+
+    }
+
+    img {
+        position: relative;
+        width: max-content;
+        height: 565px;
+        transition-duration: 3s;
+    }
+
+    icon:active {
+        color: red;
+    }
+
+    ion-icon {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        cursor: pointer;
+        
+    }
+
+    
+    .image-container:hover .div {
+        visibility: visible;
+    }
+
+    .radio {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .radio-btn {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        border: 3px solid rgb(194, 56, 56);
+        margin-bottom: 5px;
+        transition-duration: 1s;
+    }
+
+    .heading {
+        font-weight: bolder;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        color: rgb(230, 217, 48);
+        border: 2px solid orange;
+        padding: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 0px;
+        margin: 10px;
+        background-color: seagreen;
+        
+    }
+
+
+}
+
